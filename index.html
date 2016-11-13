@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"> </script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzwCEYQpM6kAgYOCBmgMRcVQSp-wN6yes&libraries=places"></script>
+	<style>
+		#map {
+			height: 400px;
+		}
+	</style>
+</head>
+<body>
+
+<div class="sk-circle">
+	<div class="sk-circle1 sk-child"></div>
+	<div class="sk-circle2 sk-child"></div>
+	<div class="sk-circle3 sk-child"></div>
+	<div class="sk-circle4 sk-child"></div>
+	<div class="sk-circle5 sk-child"></div>
+	<div class="sk-circle6 sk-child"></div>
+	<div class="sk-circle7 sk-child"></div>
+	<div class="sk-circle8 sk-child"></div>
+	<div class="sk-circle9 sk-child"></div>
+	<div class="sk-circle10 sk-child"></div>
+	<div class="sk-circle11 sk-child"></div>
+	<div class="sk-circle12 sk-child"></div>
+</div>
+
+
+
+	<div class="container parent">
+		<div class="row">
+			<div class="col-xs-6 col-xs-offset-3">
+				<h1>Выбор филиала</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-3 col-xs-offset-2">
+				<select id="countries" class="form-control">
+					<option value="null">Выберите страну</option>
+				</select>
+			</div>
+			<div class="col-xs-3 col-xs-offset-2">
+				<select id="cities" class="form-control">
+					<option value="null">Выберите город</option>
+				</select>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-6 col-xs-offset-3">
+				<div class="massage">
+					<pre></pre>
+				</div>
+			</div>
+		</div>	
+		<div class="row">
+			<div class="col-xs-6 col-xs-offset-3">
+				<h3>Посмотрите на карте</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div id="map"></div>
+			</div>
+		</div>		
+		
+	</div>
+	<script src='plugins/jquery/jquery-3.1.0.min.js'></script>
+	<script src='script.js'></script>
+</body>
+</html>
